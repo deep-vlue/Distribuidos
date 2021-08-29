@@ -15,10 +15,16 @@ def main():
 
     cliente.conectar()
 
-    cliente.enviar('un mensaje')
-   
-    mensaje = cliente.recibir()
-    print(mensaje)
+    while True:
+        print ("Ingrese una cadena")
+        cadena = input()
+        cliente.enviar(cadena)
+           
+        mensaje = cliente.recibir()
+        print(mensaje)
+
+        if cadena == "salir":
+            break
 
     cliente.desconectar()
 

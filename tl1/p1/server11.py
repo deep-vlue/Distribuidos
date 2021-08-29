@@ -1,3 +1,5 @@
+
+
 import socket
 
 
@@ -17,10 +19,10 @@ while True:
 
 	while True:
 		data = connection.recv(4096)
-		if not data: break
-		from_client += data.decode()
 
-		connection.send(message.encode('utf-8'))
+		from_client += data.decode()
+		if not data: break
+		connection.send(from_client.encode('utf-8'))
 
 	print(from_client)
 
