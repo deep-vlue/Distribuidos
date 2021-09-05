@@ -128,6 +128,36 @@ _FS = _descriptor.ServiceDescriptor(
     serialized_options=None,
     create_key=_descriptor._internal_create_key,
   ),
+    _descriptor.MethodDescriptor(
+    name='OpenFile',
+    full_name='FS.OpenFile',
+    index=1,
+    containing_service=None,
+    input_type=_PATH,
+    output_type=_BOOLEAN,
+    serialized_options=None,
+    create_key=_descriptor._internal_create_key,
+  ),
+  _descriptor.MethodDescriptor(
+    name='ReadFile',
+    full_name='FS.ReadFile',
+    index=2,
+    containing_service=None,
+    input_type=_READFILEPARAMETERS,
+    output_type=_FILE,
+    serialized_options=None,
+    create_key=_descriptor._internal_create_key,
+  ),
+  _descriptor.MethodDescriptor(
+    name='CloseFile',
+    full_name='FS.CloseFile',
+    index=3,
+    containing_service=None,
+    input_type=_PATH,
+    output_type=_BOOLEAN,
+    serialized_options=None,
+    create_key=_descriptor._internal_create_key,
+  ),
 ])
 _sym_db.RegisterServiceDescriptor(_FS)
 

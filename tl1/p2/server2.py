@@ -31,6 +31,7 @@ while True:
         elif payload.operation == 2:
             payload.data = acumulador[payload.token]
             connection.sendall(payload)
+        
             
         else:
             print(f'El cliente {payload.token} solicito el comando {payload.operacion} con el valor {payload.data}')

@@ -1,6 +1,8 @@
+import sys
 from file_system import FS
 from server import Server
 from p3a import ServerStub
+sys.path.append("..")
 
 def main():
     stub = ServerStub(FS, '50051')
